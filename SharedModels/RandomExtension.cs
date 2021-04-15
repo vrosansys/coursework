@@ -28,7 +28,7 @@ namespace SharedModels
         
         public static Company[] NextCompany(this Random rand)
         {
-            var company = new Company[rand.Next(1, 5)];
+            var company = new Company[rand.Next(2, 12)];
             for (int i = 0; i < company.Length; i++)
             {
                 company[i] = rand.NewCompany();
