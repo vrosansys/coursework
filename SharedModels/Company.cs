@@ -5,9 +5,9 @@ namespace SharedModels
     public class Company
     {
         public string Name { get; set; }
-        public string Budget { get; set; }
-        public string Name { get; set; }
-        public string Name { get; set; }
+        public int Budget { get; set; }
+        public int EmployersNumber { get; set; }
+        public int ProjectNumber { get; set; }
         
     }
 }

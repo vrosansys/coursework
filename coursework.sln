@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coursework", "coursework\coursework.csproj", "{97BEA8CB-37D1-4F3D-8171-6315614E686E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courseworkWinForm", "courseworkWinForm\courseworkWinForm.csproj", "{97BEA8CB-37D1-4F3D-8171-6315614E686E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModels", "SharedModels\SharedModels.csproj", "{7C0CA7F8-7119-4B63-B91C-D12046DD6779}"
 EndProject
