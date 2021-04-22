@@ -4,34 +4,34 @@ namespace SharedModels
 {
     public static class RandomExtension
     {
-        private static string[] CompanyNames;
+        private static readonly string[] _companyNames;
         
         static RandomExtension()
         {
-            CompanyNames = new string[]
+            _companyNames = new string[]
             {
                 "Plarium", "Google", "Samsung", "LG", "Apple", "Nokia"
             };
             
         }
         
-        public static Company NewCompany(this Random rand)
+        public static Company NextCompany(this Random rand)
         {
             return new()
             {
-                Name = CompanyNames[rand.Next(0, CompanyNames.Length)],
+                Name = _companyNames[rand.Next(0, _companyNames.Length)],
                 Budget = rand.Next(10000, 1000000),
                 EmployersNumber = rand.Next(50, 500),
                 ProjectNumber = rand.Next(1, 20)
             };
         }
         
-        public static Company[] NextCompany(this Random rand)
+        public static Company[] NextCompanies(this Random rand, int maxCompanies,int minCompanies)
         {
-            var company = new Company[rand.Next(2, 12)];
+            var company = new Company[rand.Next(minCompanies, maxCompanies)];
             for (int i = 0; i < company.Length; i++)
             {
-                company[i] = rand.NewCompany();
+                company[i] = rand.NextCompany();
             }
 
             return company;
