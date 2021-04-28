@@ -8,8 +8,8 @@ namespace coursework
         public Form1()
         {
             InitializeComponent();
-            Storage.CreateRandomData();
-            dataGridView1.DataSource = Storage.AppData;
+            AppData.CreateRandomData();
+            dataGridView1.DataSource = AppData.Companies;
         }
         
     }
