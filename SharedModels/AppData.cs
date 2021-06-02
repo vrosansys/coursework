@@ -24,9 +24,23 @@ namespace SharedModels
         {
             foreach (var data in Companies)
             {
-                Console.WriteLine($"Company: {data.Name} has {data.EmployersNumber} Employers and {data.ProjectNumber} Projects with {data.Budget}$ Budget");
+                Console.WriteLine($"Company: {data.Name} has {data.EmployersNumber} Employers and {data.ProjectsNumber} Projects with {data.Budget}$ Budget");
             }
         }
         
+        public static void AddRandomData()
+        {
+            Companies.AddRange(Rand.NextCompanies(12,2));
+        }
+        
+        public static void Add(Company company)
+        {
+            Companies.Add(company);
+        }
+        
+        public static void RemoveByIndex(int index)
+        {
+            Companies.RemoveAt(index);
+        }
     }
 }

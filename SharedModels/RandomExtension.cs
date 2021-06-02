@@ -22,7 +22,7 @@ namespace SharedModels
                 Name = _companyNames[rand.Next(0, _companyNames.Length)],
                 Budget = rand.Next(10000, 1000000),
                 EmployersNumber = rand.Next(50, 500),
-                ProjectNumber = rand.Next(1, 20)
+                ProjectsNumber = rand.Next(1, 20)
             };
         }
         

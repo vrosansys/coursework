@@ -7,7 +7,7 @@ namespace SharedModels
         public string Name { get; set; }
         public int Budget { get; set; }
         public int EmployersNumber { get; set; }
-        public int ProjectNumber { get; set; }
+        public int ProjectsNumber { get; set; }
         
     }
 }
